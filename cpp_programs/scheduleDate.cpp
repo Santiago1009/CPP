@@ -1,9 +1,3 @@
-/*
-    Integrantes:
-        Leslie Lucero Franco Calleros 223053
-        Santiago Mendivil Alvarez 226129
-*/
-
 #include <iostream>
 #include <vector>
 using namespace std;
