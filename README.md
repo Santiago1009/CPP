@@ -1,6 +1,6 @@
 # CPP Programs 
 
-The programs listed here are coded in C++ and using spanish language for a college class.
+The programs listed here are coded in C++ for studying reasons.
 
 ## Important 
 
