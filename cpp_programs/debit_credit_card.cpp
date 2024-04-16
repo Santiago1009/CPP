@@ -1,14 +1,3 @@
-/*
-    Leslie Lucero Franco Calleros 223053
-    Anna Lizbeth Barajas Sandoval 222835
-    Santiago Mendivil Alvarez 226129
-
-    Justificacion de uso de la libreria algorithm:
-        En este programa se usa en varias ocasiones el metodo "find" de la libreria algorithm, esto
-        con el proposito de simplificar la busqueda de ocurrencias de un elemento especificado por
-        usuario en lugar de recorrer manualmente los vectores utilizados, ya que garantiza un rendimiento
-        optimo y ayuda a hacer la busqueda mas facil.
-*/
 #include <iostream>
 #include <string>
 #include <vector>
