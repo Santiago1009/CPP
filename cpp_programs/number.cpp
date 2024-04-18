@@ -1,5 +1,10 @@
+/*
+    Datos: int, float, char, double y manejo de constructor y destructor con letreos y anexar un friend
+*/
+
 #include <iostream>
 using namespace std;
+
 template <class T>
 class Number
 {

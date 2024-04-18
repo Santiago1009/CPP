@@ -1,5 +1,10 @@
+/*
+    Datos: int, float, char, double y tamaño del arreglo N(1-20)
+*/
+
 #include <iostream>
 using namespace std;
+
 template <class T>
 void sortArray(T arr[], int s)
 {
@@ -16,6 +21,7 @@ void sortArray(T arr[], int s)
         cout << arr[i] << " ";
     cout << endl;
 }
+
 int main()
 {
     int a[5] = {10, 50, 30, 40, 20};
