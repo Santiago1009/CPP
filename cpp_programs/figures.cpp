@@ -51,7 +51,7 @@ public:
     {
         cout << endl
              << "Figura Construida" << endl;
-        _sleep(1);
+
         base = b;
         altura = a;
         radio = r;
@@ -61,7 +61,6 @@ public:
     {
         cout << endl
              << "Figura Destruida" << endl;
-        _sleep(1);
     }
 
     virtual T calcularArea() const
@@ -82,13 +81,11 @@ public:
     {
         cout << endl
              << "Cuadrado - Cubo Construido" << endl;
-        _sleep(1);
     }
     virtual ~Cuadrado()
     {
         cout << endl
              << "Cuadrado - Cubo Destruido " << endl;
-        _sleep(1);
     }
     T calcularArea() const
     {
@@ -104,17 +101,15 @@ template <class T>
 class Circulo : public Figura<T>
 {
 public:
-    Circulo(float r, float h) : Figura(0, h, r)
+    Circulo(T r, T h) : Figura(0, h, r)
     {
         cout << endl
              << "Circulo - Cilindro Construido" << endl;
-        _sleep(1);
     }
     virtual ~Circulo()
     {
         cout << endl
              << "Circulo - Cilindro Destruido " << endl;
-        _sleep(1);
     }
     T calcularArea() const
     {
@@ -134,13 +129,11 @@ public:
     {
         cout << endl
              << "Triangulo - Piramide Construida" << endl;
-        _sleep(1);
     }
     virtual ~Triangulo()
     {
         cout << endl
              << "Triangulo - Piramide Destruida" << endl;
-        _sleep(1);
     }
     T calcularArea() const
     {
@@ -160,13 +153,11 @@ public:
     {
         cout << endl
              << "Piramide Construida" << endl;
-        _sleep(1);
     }
     virtual ~Piramide()
     {
         cout << endl
              << "Piramide Destruida" << endl;
-        _sleep(1);
     }
     T calcularArea() const
     {
@@ -206,7 +197,7 @@ int main()
                  << "Ingresa un lado del cuadrado: ";
             cin >> base;
 
-            Figura *cuadrado = new Cuadrado(base);
+            Figura<float> *cuadrado = new Cuadrado(base);
 
             cout << endl
                  << "Area del cuadrado: " << cuadrado->calcularArea() << endl;
@@ -226,7 +217,7 @@ int main()
                  << "Ingresa la altura del cilindro: ";
             cin >> altura;
 
-            Figura *circulo = new Circulo(radio, altura);
+            Figura<float> *circulo = new Circulo(radio, altura);
             cout << endl
                  << "Area del circulo: " << circulo->calcularArea() << endl;
             cout << endl
@@ -245,7 +236,7 @@ int main()
                  << "Ingresa la altura del triangulo: ";
             cin >> altura;
 
-            Figura *triangulo = new Triangulo(base, altura);
+            Figura<float> *triangulo = new Triangulo(base, altura);
             cout << endl
                  << "Area del triangulo: " << triangulo->calcularArea() << endl;
             cout << endl
@@ -259,7 +250,6 @@ int main()
         {
             cout << endl
                  << "Saliendo del programa..." << endl;
-            _sleep(1);
         }
         else
         {
